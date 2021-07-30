@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranshu_Atrey</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat&family=Sacram
+ento&display=swap"
+      rel="stylesheet"
+    />
+    <!--Here i have provided link to favicon which will appear with title.-->
+  </head>
+  <body>
+    <!--The <div> tag defines a division or a section in an HTML document.
+The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with 
+JavaScript.
+
+If div tag was empty then it will have 0 heght but as here we have added h1 and p tag thus it will have some 
+height
+
+Due to some default css applied on body tag we see that there is some distance between our border of website
+and content, so to renove this distance we have to override sone default values.Also some default values 
+in heading tag should also be overriden.  
+
+Also revise the concept of bssic box model of css from mdn to truly uvderstand this topic
+
+
+*************************  THE  BOX  MODEL  IN   CSS**********************
+Every single html element is treated as box by css, which is further styled by css.
+
+For an html element we have content area as box which is where we write all content of our website in body.
+After that we have padding area which is space betweeb content and border and after that comes border area
+and at the end margin area which is apace between two html elements.
+
+
+
+Here we have to override margin property value to zero to have no space between website border and div..-->
+
+    <img class="top_cloud" src="images/cloud.png" alt="cloud" />
+    <div class="old_is_gold">
+      <h1>I'm Pranshu.</h1>
+      <h2 class="Nasty">a web developer</h2>
+    </div>
+    <!--<div class="middle_container" ></div>
+    <div class="bottom_container"></div>-->
+    <!--Display property in css specifies the display behaaviour of an element. Its values csn be:
+1.  Block : it make  element to always starts on a new line. A block-level element always takes up the full
+    width of  webpage. For example: <p>, <form>, list and list items, heading, <div> etc
+
+2.  Inline: It makes element to does not start on a new line. An inline element only takes up as much width as
+    required. For example: img, a, span.
+    
+3.  Inline-block : By this value we can make elements as inline but main thing is we can also change the
+    width of element.
+
+4.  None:  This will help us to get rid of elements, means it will display nothing.
+
+we van also use visibility hidden to make same changes but in this case positioning will remainn there.-->
+
+    <!--The <span> is inline element used to mark up a part of a text, or part of a document
+        or part of block elements.
+    
+    NOW after reading this very obvious question should arise in your mind? Then why we use block elements if 
+    we have  inline elements?
+THE REASON IS WE CANNOT CHANGE THE WIDTH OF INLINE ELEMENTS WHEREAS CHANGING WIDTH IS PPOSSIBLE IN BLOCK
+ELEMENTS , thats why we use them.
+
+Solution for this is, we can use display property for such elements with inline-block value which will make 
+element to change its width and also to act as inline element.-->
+
+    <!--**********************  POSITION PROPERTY IN CSS  *******************-->
+    <!-- The position CSS property sets how an element is positioned in a document.
+The top, right, bottom, and left properties determine the final location of positioned elements
+
+********* VALUES OF POSITION PROPERTY *********
+
+position: static;
+The element is positioned according to the normal flow of the document. The top, right, bottom, left, and 
+z-index properties have no effect. This is the default value. Means elements will be positioned as they were
+positioned by default by default css applied to them.
+
+position: relative;
+In this element will move away from its initial position, to that value specified. This does not affect the 
+position of any other element.
+It will not effect the flow of element menas after repositioning of element still ghost element is present 
+at its initial position so it is not deleted so other element will not take its place.
+
+position: absolute;
+It effects the flow of element as after repositioning the, initial position of element is deleted thus other
+elements take its place. It also does not affect the position of other elements.
+In this element is positioned relative to its parent element, in most of cases it is body but sometime it can 
+be any other element.
+
+
+
+position: fixed;
+It also effect the flow of html as its initial position is deleted hence other element can take its place.
+Also it does not effect the positon of other element.
+This make our element fixed at place specified, even if we are scrolling our page it will stay on that position
+meams it will be visible on screen even if we are scrolling our page.
+
+position: sticky;
+
+/* Global values */
+position: inherit;
+position: initial;
+position: revert;
+position: unset;-->
+
+    <img class="bottom_cloud" src="images/cloud.png" alt="cloud" />
+    <img src="images/mountain.png" alt="mountain" />
+
+    <!--Most important decision i have to make as a developer is what font i am gonna use in my website.
+Now what happen is if for some reason font that we are using in our website is not installed in user 
+browser or operaring system  then by default it will show that type of sans serif font that is installed in
+that browser or operating system, this can make our website look different for different users so to avoid
+this we use web safe fonts. -->
+
+    <!--                 ************** WEB SAFE FONTS ***************
+Web safe fonts are fonts that are universally installed across all browsers and devices.
+>>>>>>>>>>>>>>>>>> NO FONT IS 100% WEB SAFE <<<<<<<<<<<<<<<<<<<<<<<-->
+    <!--That is why we use fallback fonts which are backup fonts which will apperar to user if first font is not
+installed in their browser and if second is also not installed then third will show and so on. -->
+    <br /><br />
+
+    <div class="middle-container">
+      <div class="profile">
+        <img
+          class="real"
+          src="https://image.flaticon.com/icons/png/512/163/163834.png"
+          alt="Image"
+          width="150px"
+          height="150px"
+        />
+        <h2>Hello.</h2>
+        <p class="man">
+          I am pranshu atrey. I love coding, cricket, dancing , chess , kane
+          williamson, and much more.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2 class="pro_max">My Skills.</h2>
+        <div class="skill-row">
+          <img
+            class="first_image"
+            src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif"
+            alt="coding"
+            width="180px"
+            height="180px"
+          />
+          <h3 class="action">CODING</h3>
+          <p class="jackson">
+            I love coding as fast as possible. Something bad smelling here.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img
+            class="second_image"
+            src="https://media.giphy.com/media/M5fX8pw9QYBYA/giphy.gif"
+            alt="nacho"
+            height="180px"
+            width="180px"
+          />
+          <h3 class="action">DANCING</h3>
+          <p class="jackson">
+            I love to dance, for me dancing is just enjoying its not about
+            learning many steps and then execute no, its about just moving your
+            body the way u want.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If u love cricket as much as i do.</h3>
+        <p class="make">
+          Love cricket? Lets talk about how awesome cricket is! It has lots of
+          benifits to our body!
+        </p>
+        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/feed/">LinkedIn </a>
+      <a class="footer-link" href="https://www.instagram.com/">Instagram </a>
+      <a
+        class="footer-link"
+        href="https://pranshuatrey.github.io/personal_website/"
+        >Website</a
+      >
+
+      <p class="blow">© 2020 @ Atrey Limited.</p>
+    </div>
+  </body>
+</html>

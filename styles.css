@@ -1,0 +1,202 @@
+/*The text-align CSS property sets the horizontal alignment of the content inside a block element*/
+
+body {
+  margin: 0px;
+  background-color: #eaf6f6;
+  text-align: center;
+  /*font-family:Verdana, Tahoma, sans-serif In CSS, we use the font-family property to specify the font
+     of a text.*/
+  font-family: "Merriweather", serif;
+  /*font-size: 200%;*/ /* It will get inherited.*/
+}
+h1 {
+  padding-top: 50px;
+  margin: 50px auto 0 auto; /*Area from top*/
+  font-family: "Sacramento", cursive;
+  /*font-size: 5em;*/ /* Body value will be inherited by this.*/
+  font-size: 5.6rem; /* this will not inherit and also it is dynamic.*/
+  color: #66bfbf;
+  line-height: 2; /* The line-height property specifies the height of a line. Note that it will not change
+  the height of text, it will change the height of line, which will make space between lines.
+
+  We can specify this without units by just writing number which means change line height to that times
+  as number specified from initial value of line height.  */
+
+  /* 16px = 100%  AND  1em = 16px*/
+
+  /*There are two types of length units: absolute and relative.
+The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+For example: cm , mm , px etc.
+
+Relative length units specify a length relative to another length property.
+For example: em , rem , % etc. In this em and % are relative to 16px as above mentioned.*/
+
+  /* Note that em and % are inheritable and dynamic means, if particular font size is given to my
+element and on other hand body has given some other font size then this element will inherit that value from
+body or from parent element and add it to its current vallue which will unexpectedly increase our font size.
+Dynamic means if user change its font default size of its browser then these fonts with these units will change.
+
+Whereas px never change as it is not inheritable nor dynamic.
+
+So it is recommended using rem relative unit as it is dynamic and not inheritable which is best case for us.*/
+}
+div {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*margin is CSS property which sets the margin area on all four sides of an element.
+margin area is area which separate the element from its neighbors*/
+
+/*.middle_container{
+    background-color: blue;
+    width: 200px; height: 200px;
+}
+.bottom_container{
+    background-color: red;
+    width: 200px; height: 200px;
+}*/
+.top_cloud {
+  position: relative;
+  left: 335px;
+  top: 50px;
+}
+.bottom_cloud {
+  position: absolute;
+  left: 15.6rem;
+}
+h2 {
+  font-size: 2.5rem;
+  color: #66bfbf;
+}
+h3 {
+  color: #11999e;
+}
+a {
+  color: #11999e;
+}
+.Nasty {
+  font-weight: normal;
+}
+.skill-row {
+  width: 50%;
+  text-align: left; /* NOTE THAT TEXT ALIGN MAKE THINGS IN AN ELEMENT TO ALIGN AT CENTERE NOT
+  ELEMETNT ITSELF.*/
+  margin: auto auto 135px;
+}
+.jackson {
+  line-height: 2;
+  font-weight: bold;
+  /*clear: both;*/ /*The clear CSS property sets whether an element must be moved below (cleared) floating elements that
+  precede it
+  We can say this property as anti float which we have use further.*/
+}
+.first_image {
+  width: 25%;
+  float: left;
+  /*The float CSS property places an element on the left or right side of its
+   container, allowing text and inline elements to wrap around it.*/
+  margin-right: 30px;
+}
+.second_image {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.pro_max {
+  margin-bottom: 100px;
+}
+.middle-container {
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.bottom-container {
+  background-color: #e4f9f5;
+}
+.real {
+  border-radius: 50%;
+  /*The border-radius CSS property rounds the corners of an element's outer border
+   edge.*/
+  background-color: coral;
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+}
+.man {
+  width: 25%;
+  margin: auto;
+  font-weight: bold;
+  line-height: 2;
+}
+hr {
+  border-color: grey;
+  border-width: thick; /* REMEMBER DONT FORGIT THIS AS IT IS IMPORTANT PROPERTY TO REMEMBER. */
+  border-style: dotted none none;
+  width: 5%;
+  margin: 100px auto;
+}
+.make {
+  width: 32%;
+  font-weight: bold;
+  margin: 30px auto;
+  line-height: 2;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #2980b9);
+  background-image: -moz-linear-gradient(top, #11cdd4, #2980b9);
+  background-image: -ms-linear-gradient(top, #11cdd4, #2980b9);
+  background-image: -o-linear-gradient(top, #11cdd4, #2980b9);
+  background-image: -webkit-gradient(to bottom, #11cdd4, #2980b9);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 34px;
+  line-height: 34px;
+  color: #ffffff;
+  font-family: Arial;
+  width: 139px;
+  font-size: 18px;
+  padding: 5px;
+  border: solid #337fed 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  border: solid #337fed 1px;
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -webkit-gradient(to bottom, #30e3cb, #2bc4ad);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.bottom-container {
+  background-color: #66bfbf;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.footer-link {
+  position: relative;
+  bottom: 20px;
+  margin: auto 20px;
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+a:hover {
+  color: #eaf6f6;
+}
+.blow {
+  position: relative;
+  top: 10px;
+  color: #eaf6f6;
+  font-size: smaller;
+}
